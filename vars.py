@@ -1,14 +1,6 @@
-# vars.py — Configuration Variables
-
 import os
 
-API_ID = int(os.getenv("API_ID", 17950436))  # Replace with your actual API ID
-API_HASH = os.getenv("API_HASH", "9d8ae4d35b1106df910b94dcaf73d346")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "your_bot_token")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID", -1002359983884))  # Your channel ID
+BOT_TOKEN = os.environ.get("8188509235:AAGtp4-ZQ1JHhzCdYM0eI5HK4LbPSo5uNog")
+API_ID = os.environ.get("17950436")
+API_HASH = os.environ.get("9d8ae4d35b1106df910b94dcaf73d346")
 
-# Optional: Admins list
-SUDO_USERS = [123456789, 987654321]  # Telegram user IDs
-
-# Download directory (temporary)
-DOWNLOAD_DIR = "downloads"
